@@ -20,6 +20,8 @@ RUN set ex; \
     useradd --uid 1000 --gid 1000 --non-unique --create-home --home-dir /h/ivan --password ivan --shell /bin/bash ivan && \
     echo 'ivan ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/90-ivan
 
+COPY .bash_aliases /h/ivan/.bash_aliases
+
 RUN set ex; curl -sSL -o /tmp/docker.sh https://get.docker.com/ && sh /tmp/docker.sh
 
 RUN set ex; \
