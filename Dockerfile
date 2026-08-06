@@ -1,4 +1,4 @@
-FROM ghcr.io/astral-sh/uv:0.11.7-python3.11-trixie AS astral-sh
+FROM ghcr.io/astral-sh/uv:python3.11-trixie AS astral-sh
 
 FROM node:lts-trixie-slim
 
