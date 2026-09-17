@@ -32,4 +32,4 @@ RUN set ex; \
 
 COPY --from=astral-sh /usr/local/bin/uv* /usr/local/bin/
 
-RUN npm install -g marked@18.0.9
+RUN npm install -g marked@18.0.12
